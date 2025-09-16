@@ -1,11 +1,11 @@
 
-// VARIABLES
+// Variables 
 
 let cart = [];
 let totalPrice = 0;
 
 
-// SPINNER FUNCTIONS
+// Spinner functions      
 
 function showSpinner() {
   document.getElementById("spiner").classList.remove("hidden");
@@ -16,7 +16,7 @@ function hideSpinner() {
 }
 
  
-// LOAD PLANTS (ALL CARDS)
+// All cards
 
 const loadPlants = () => {
   showSpinner();
@@ -29,7 +29,7 @@ const loadPlants = () => {
 };
 
 
-// DISPLAY PLANTS CARDS
+// Display plants cards  
 
 const displayPlants = (cards) => {
   const treeContainer = document.getElementById('treeContainer');
@@ -57,8 +57,8 @@ const displayPlants = (cards) => {
 };
 
  
-// LOAD CATEGORIES
- 
+// Load categories 
+
 const categoryContainer = document.getElementById('categoryContainer');
 
 const loadCategories = () => {
@@ -72,7 +72,7 @@ const loadCategories = () => {
 };
 
  
-// DISPLAY CATEGORIES
+// Display categories
  
 const displayCategories = (categories) => {
   categoryContainer.innerHTML = "";
@@ -97,7 +97,7 @@ categoryContainer.addEventListener('click', (event) => {
 
 }
  
-// LOAD PLANTS BY CATEGORY
+// Load plants by category 
 
 const loadCategoryPlants = (id) => {
   showSpinner();
@@ -110,7 +110,7 @@ const loadCategoryPlants = (id) => {
 };
 
 
-// CART FUNCTIONS
+// Cart funcations 
  
 function addToCart(plant) {
   const cartContainer = document.getElementById("price-divs");
@@ -142,7 +142,7 @@ function removeFromCart(itemId, price) {
 }
 
 
-// MODAL FUNCTIONS
+// Modal funcations
 
 function showModal(plant) {
   document.getElementById("modal-image").src = plant.image;
