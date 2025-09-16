@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     
@@ -169,7 +169,7 @@
      <section>
           <div id="plantModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div class="bg-white p-5 rounded-lg w-96 relative">
-         <button onclick="closeModal()" class="absolute bottom-3 right-3 text-red-600 text-3xl"><i class="fa-regular fa-rectangle-xmark"></i></button>
+         <span onclick="closeModal()" class="absolute bottom-3 right-3 text-red-600 text-3xl"><i class="fa-regular fa-rectangle-xmark"></i></span>
          <img id="modal-image" class="w-full h-40 object-cover rounded-lg" alt=""/>
          <span id="modal-name" class="text-xl font-bold mt-3"></span>
          <p id="modal-description" class="text-gray-600 mt-2"></p>
@@ -186,5 +186,9 @@
   <footer class="text-center bg-[#071c0f] text-white py-4 ">
       <p>© 2025 Green Earth. All Rights Reserved.</p>
   </footer>
+
+    <!-- Script -->
+  <script src="./script/index.js"></script>
+
 </body>
 </html>
